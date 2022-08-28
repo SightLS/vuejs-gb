@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <CalcSum/>
   </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import CalcSum from '@/components/CalcSum'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CalcSum
   }
 }
 </script>
