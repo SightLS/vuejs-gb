@@ -13,7 +13,7 @@
       </div>
       <div class="keyboard__keys">
         <div class="checkbox">
-          <input type="checkbox" id="checkbox" v-model="checked">Отображать экранную клавиатуру
+          <input type="checkbox" id="checkbox" v-model="checked">Отобразить экранную клавиатуру
         </div>
         <label for="checkbox" class="keyboard__screen" v-if="checked">
           <button v-for="btn in keyboard" :key="btn" @click="input(btn, picked)">{{ btn }}</button>
