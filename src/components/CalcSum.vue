@@ -15,7 +15,7 @@
         <div class="checkbox">
           <input type="checkbox" id="checkbox" v-model="checked">Отобразить экранную клавиатуру
         </div>
-        <label for="checkbox" class="keyboard__screen" v-show="checked">
+        <div class="keyboard__screen" v-show="checked">
           <div class="keyboard__keys">
             <button v-for="btn in keyboard" :key="btn" @click="input(btn, picked)">{{ btn }}</button>
           </div>
@@ -24,12 +24,8 @@
             <label for="one">1ый операнд</label>
             <input type="radio" name="radio" id="two" v-on:change="leverOp2 ()">
             <label for="two">2ый операнд</label>
-            <!--          <input type="radio" name="radio"  v-model="picked" :checked="checked">-->
-            <!--          <label for="one">Один</label>-->
-            <!--          <input type="radio" name="radio" v-model="picked">-->
-            <!--          <label for="two">Два</label>-->
           </div>
-        </label>
+        </div>
       </div>
     </div>
   </div>
