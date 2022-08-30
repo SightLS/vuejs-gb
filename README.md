@@ -1,4 +1,4 @@
-# vue-home-works
+# vue_gb
 
 ## Project setup
 ```
